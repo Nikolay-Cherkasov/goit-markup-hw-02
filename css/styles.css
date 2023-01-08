@@ -1,0 +1,226 @@
+/* главный цвет основного текста #212121 */
+/* акцент текста #000000 */
+/* вторичный цвет текста  #757575 */
+/* фон героя #2F303A; */
+/* акцент #2196F3 */
+/* цвет кнопки героя при ховере #188CE8; */
+/* фон section-team #F5F4FA */
+/* основной белый  #FFFFFF */
+
+:root {
+    --primary-text-color:#212121;
+    --accent-text-color: #000000;
+    --subtitle-text-color:#757575;
+    --hero-bcg-color:#2F303A;
+    --accent-color: #2196F3;
+    --hover-bcg-btn-color:#188CE8;
+    --bcg-team-color:#F5F4FA;
+    --primary-white-color: #FFFFFF;
+
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;  
+}
+/* ---------Скрыты заголовоки "Переваги"/"Портфоліо"------ */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* все списки */
+.list,
+.link,
+.logo {
+    text-decoration: none;
+    list-style: none;
+}
+/* ---cursor:pointer */
+.btn {
+    cursor: pointer;
+}
+
+
+/* ----------------<header> */
+/* span logo */
+.accent {
+    color: var(--accent-color);
+}
+.logo {
+    color: var(--accent-text-color);
+
+    font-family: 'Raleway', sans-serif;
+        font-size: 26px;
+        line-height: 1.19;
+}
+.header .link:hover,
+.header .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .link {
+    color: var(--primary-text-color);
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+}
+.site-nav .current {
+    color: var(--accent-color);
+}
+.contact-list .contact-link {
+    color: var(--subtitle-text-color);
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;  
+}
+
+/* -----------------</header> */
+
+/* -----------------index.html-------------- */
+/* Hero */
+.hero {
+    background-color: var(--hero-bcg-color);
+    text-align: center;
+}
+.hero-title{
+     color: var(--primary-white-color);
+
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        /* text-align: center; */
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+}
+.hero .primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        text-align: center;
+        letter-spacing: 0.06em;
+}
+.hero .btn:hover,
+.hero .btn:focus {
+    color: var(--primary-white-color);
+    background-color: var(--hover-bcg-btn-color);
+}
+/* ----------section "Переваги" */
+.features-list .features-title { 
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+}
+.text-features {
+    color: var(--subtitle-text-color);
+}
+/* Заголовки секций "Чим ми зймаємося"/"Наша команда"*/
+.work-title,
+.team-title {
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+}
+/* ----------section "Наша команда" */
+.section-team {
+    background-color: var(--bcg-team-color);
+}
+.team-title {
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+}
+.about-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.pre-title {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/*---------------- <footer> */
+.footer {
+    background-color: var(--hero-bcg-color);
+}
+/* span logo */
+.accent {
+    color: var(--accent-color);
+}
+.logo-footer {
+    color: var(--primary-white-color);
+
+    font-family: 'Raleway';
+        font-size: 26px;
+        line-height: 1.19;
+}
+.footer .link:hover,
+.footer .link:focus {
+    color: var(--accent-color);
+}
+/* address */
+.contact-links {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    
+}
+.contact-address {
+    color: var(--primary-white-color);
+}
+/* -----------------</footer> */
+
+/* ------------------- portfolio.html--------------- */
+/* section "Портфолио" */
+/* Filtres */
+
+.filtres-list .btn {
+    color: var(--primary-text-color);
+    background-color: var(--bcg-team-color);
+
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+}
+.filtres-list .btn:hover,
+.filtres-list .btn:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+/* project-list */
+.project-title {     
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+.text-project {
+    color: var(--subtitle-text-color);
+
+    font-size: 16px;
+    line-height: 1.8;
+}
